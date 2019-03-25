@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"fmt"
 	"github.com/go-chi/chi"
 	"net/http"
 )
@@ -18,6 +19,8 @@ func SetupRoutes() *chi.Mux{
 
 	r := chi.NewRouter()
 	for _, route := range routes{
+		fmt.Println(route.Method)
+		fmt.Println(route.Path)
 		r.MethodFunc(route.Method, route.Path, route.Handler)
 	}
 	return r
