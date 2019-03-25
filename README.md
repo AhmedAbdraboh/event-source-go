@@ -2,7 +2,7 @@
 
 This is an example of how to use event source in a very easy application like create account, deposit and withdrawal from it. 
 
-###How to use: 
+### How to use: 
 - Install docker
 - run 
 
@@ -65,7 +65,7 @@ to use it:
     
     
     
-###Todo:
+### Todo:
 
    - Make Unit Test
    - Make API Test
